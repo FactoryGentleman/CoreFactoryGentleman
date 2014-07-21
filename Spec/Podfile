@@ -1,0 +1,16 @@
+def needed_pods
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'OCMockito'
+  pod 'FactoryGentleman'
+end
+
+target 'CoreFactoryGentlemanSpec-iOS' do
+  platform :ios, :deployment_target => 6.0
+  needed_pods
+end
+
+target 'CoreFactoryGentlemanSpec-Mac' do
+  platform :osx, :deployment_target => 10.8
+  needed_pods
+end

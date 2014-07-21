@@ -1,0 +1,16 @@
+def needed_pods
+  pod 'CoreFactoryGentleman', :path => '../'
+
+  pod 'Specta'
+  pod 'Expecta'
+end
+
+target 'ContactsSpec-iOS' do
+  platform :ios, :deployment_target => 5.0
+  needed_pods
+end
+
+target 'ContactsSpec-Mac' do
+  platform :osx, :deployment_target => 10.7
+  needed_pods
+end

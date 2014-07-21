@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28A75946125A46E29AD02991 /* libPods-CoreFactoryGentlemanSpec-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA15CEB6A3F4E2C9C66C877 /* libPods-CoreFactoryGentlemanSpec-iOS.a */; };
+		2ACE8AC3E3704132B316D3D3 /* libPods-CoreFactoryGentlemanSpec-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8697A42B0EE4C78A83B192B /* libPods-CoreFactoryGentlemanSpec-Mac.a */; };
+		5B4CAE77197C824A00821A97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE76197C824A00821A97 /* XCTest.framework */; };
+		5B4CAE79197C824A00821A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE78197C824A00821A97 /* Foundation.framework */; };
+		5B4CAE7B197C824A00821A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE7A197C824A00821A97 /* UIKit.framework */; };
+		5B4CAEA2197C8C8D00821A97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE76197C824A00821A97 /* XCTest.framework */; };
+		F80322194982DCD40149C9CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8032519F6BEA3609247560B /* CoreData.framework */; };
+		F8032C8E61A670A58831D337 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F803206C57B99904B30639E5 /* GcovTestObserver.m */; };
+		F8032F694E1E49AB2C1537CB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8032519F6BEA3609247560B /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29C968F793454CBB8D165D53 /* Pods-CoreFactoryGentlemanSpec-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreFactoryGentlemanSpec-iOS.xcconfig"; path = "Pods/Pods-CoreFactoryGentlemanSpec-iOS.xcconfig"; sourceTree = "<group>"; };
+		46F25D138C5644DEB365FD1F /* Pods-CoreFactoryGentlemanSpec-Mac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreFactoryGentlemanSpec-Mac.xcconfig"; path = "Pods/Pods-CoreFactoryGentlemanSpec-Mac.xcconfig"; sourceTree = "<group>"; };
+		5B4CAE73197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreFactoryGentlemanSpec-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4CAE76197C824A00821A97 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5B4CAE78197C824A00821A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B4CAE7A197C824A00821A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5B4CAE7E197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreFactoryGentlemanSpec-iOS-Info.plist"; sourceTree = "<group>"; };
+		5B4CAE84197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreFactoryGentlemanSpec-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		5B4CAEA1197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreFactoryGentlemanSpec-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4CAEA5197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreFactoryGentlemanSpec-Mac-Info.plist"; sourceTree = "<group>"; };
+		5B4CAEAB197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreFactoryGentlemanSpec-Mac-Prefix.pch"; sourceTree = "<group>"; };
+		A8697A42B0EE4C78A83B192B /* libPods-CoreFactoryGentlemanSpec-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreFactoryGentlemanSpec-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA15CEB6A3F4E2C9C66C877 /* libPods-CoreFactoryGentlemanSpec-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreFactoryGentlemanSpec-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F803206C57B99904B30639E5 /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
+		F8032423DEF6BFEACE454D36 /* GcovTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GcovTestObserver.h; sourceTree = "<group>"; };
+		F8032519F6BEA3609247560B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B4CAE70197C824A00821A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4CAE77197C824A00821A97 /* XCTest.framework in Frameworks */,
+				5B4CAE7B197C824A00821A97 /* UIKit.framework in Frameworks */,
+				5B4CAE79197C824A00821A97 /* Foundation.framework in Frameworks */,
+				28A75946125A46E29AD02991 /* libPods-CoreFactoryGentlemanSpec-iOS.a in Frameworks */,
+				F8032F694E1E49AB2C1537CB /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4CAE9E197C8C8D00821A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4CAEA2197C8C8D00821A97 /* XCTest.framework in Frameworks */,
+				F80322194982DCD40149C9CF /* CoreData.framework in Frameworks */,
+				2ACE8AC3E3704132B316D3D3 /* libPods-CoreFactoryGentlemanSpec-Mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B4CAE68197C142A00821A97 = {
+			isa = PBXGroup;
+			children = (
+				5BB846F919819DC30063227D /* Classes */,
+				5B4CAE7C197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS */,
+				5B4CAEA3197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac */,
+				5B4CAE75197C824A00821A97 /* Frameworks */,
+				5B4CAE74197C824A00821A97 /* Products */,
+				46F25D138C5644DEB365FD1F /* Pods-CoreFactoryGentlemanSpec-Mac.xcconfig */,
+				29C968F793454CBB8D165D53 /* Pods-CoreFactoryGentlemanSpec-iOS.xcconfig */,
+				F8032F27D28F89AF5DA66365 /* Spec */,
+			);
+			sourceTree = "<group>";
+		};
+		5B4CAE74197C824A00821A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CAE73197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS.xctest */,
+				5B4CAEA1197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B4CAE75197C824A00821A97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CAE76197C824A00821A97 /* XCTest.framework */,
+				5B4CAE78197C824A00821A97 /* Foundation.framework */,
+				5B4CAE7A197C824A00821A97 /* UIKit.framework */,
+				A8697A42B0EE4C78A83B192B /* libPods-CoreFactoryGentlemanSpec-Mac.a */,
+				DDA15CEB6A3F4E2C9C66C877 /* libPods-CoreFactoryGentlemanSpec-iOS.a */,
+				F8032519F6BEA3609247560B /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B4CAE7C197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CAE7E197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS-Info.plist */,
+				5B4CAE84197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS-Prefix.pch */,
+			);
+			path = "CoreFactoryGentlemanSpec-iOS";
+			sourceTree = "<group>";
+		};
+		5B4CAEA3197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CAEA5197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac-Info.plist */,
+				5B4CAEAB197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac-Prefix.pch */,
+			);
+			path = "CoreFactoryGentlemanSpec-Mac";
+			sourceTree = "<group>";
+		};
+		5BB846F919819DC30063227D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BB846FA19819DC30063227D /* CoreFactoryGentleman */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		5BB846FA19819DC30063227D /* CoreFactoryGentleman */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreFactoryGentleman;
+			sourceTree = "<group>";
+		};
+		F803220D81E65B1055781AAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8032423DEF6BFEACE454D36 /* GcovTestObserver.h */,
+				F803206C57B99904B30639E5 /* GcovTestObserver.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F80324ACB7275DFD322AAEFE /* CoreFactoryGentleman */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreFactoryGentleman;
+			sourceTree = "<group>";
+		};
+		F8032F27D28F89AF5DA66365 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				F80324ACB7275DFD322AAEFE /* CoreFactoryGentleman */,
+				F803220D81E65B1055781AAF /* Helpers */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B4CAE72197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4CAE87197C824A00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-iOS" */;
+			buildPhases = (
+				A033193950FD446784242787 /* Check Pods Manifest.lock */,
+				5B4CAE6F197C824A00821A97 /* Sources */,
+				5B4CAE70197C824A00821A97 /* Frameworks */,
+				5B4CAE71197C824A00821A97 /* Resources */,
+				7D9A4D8F0D3B4EA8A6B14B51 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreFactoryGentlemanSpec-iOS";
+			productName = "CoreFactoryGentlemanSpec-iOS";
+			productReference = 5B4CAE73197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B4CAEA0197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4CAEAC197C8C8D00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-Mac" */;
+			buildPhases = (
+				D17E890E85F1499DB1221FAA /* Check Pods Manifest.lock */,
+				5B4CAE9D197C8C8D00821A97 /* Sources */,
+				5B4CAE9E197C8C8D00821A97 /* Frameworks */,
+				5B4CAE9F197C8C8D00821A97 /* Resources */,
+				7DCEC968220D40A582C63237 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreFactoryGentlemanSpec-Mac";
+			productName = "CoreFactoryGentlemanSpec-Mac";
+			productReference = 5B4CAEA1197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B4CAE69197C142A00821A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 5B4CAE6C197C142A00821A97 /* Build configuration list for PBXProject "CoreFactoryGentlemanSpec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B4CAE68197C142A00821A97;
+			productRefGroup = 5B4CAE74197C824A00821A97 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				5B4CAE72197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS */,
+				5B4CAEA0197C8C8D00821A97 /* CoreFactoryGentlemanSpec-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B4CAE71197C824A00821A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4CAE9F197C8C8D00821A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D9A4D8F0D3B4EA8A6B14B51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CoreFactoryGentlemanSpec-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCEC968220D40A582C63237 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CoreFactoryGentlemanSpec-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A033193950FD446784242787 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D17E890E85F1499DB1221FAA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B4CAE6F197C824A00821A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8032C8E61A670A58831D337 /* GcovTestObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B4CAE9D197C8C8D00821A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B4CAE6D197C142A00821A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+			};
+			name = Debug;
+		};
+		5B4CAE6E197C142A00821A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+			};
+			name = Release;
+		};
+		5B4CAE85197C824A00821A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C968F793454CBB8D165D53 /* Pods-CoreFactoryGentlemanSpec-iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFactoryGentlemanSpec-iOS/CoreFactoryGentlemanSpec-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CoreFactoryGentlemanSpec-iOS/CoreFactoryGentlemanSpec-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5B4CAE86197C824A00821A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C968F793454CBB8D165D53 /* Pods-CoreFactoryGentlemanSpec-iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFactoryGentlemanSpec-iOS/CoreFactoryGentlemanSpec-iOS-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CoreFactoryGentlemanSpec-iOS/CoreFactoryGentlemanSpec-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		5B4CAEAD197C8C8D00821A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F25D138C5644DEB365FD1F /* Pods-CoreFactoryGentlemanSpec-Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFactoryGentlemanSpec-Mac/CoreFactoryGentlemanSpec-Mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CoreFactoryGentlemanSpec-Mac/CoreFactoryGentlemanSpec-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5B4CAEAE197C8C8D00821A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F25D138C5644DEB365FD1F /* Pods-CoreFactoryGentlemanSpec-Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreFactoryGentlemanSpec-Mac/CoreFactoryGentlemanSpec-Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CoreFactoryGentlemanSpec-Mac/CoreFactoryGentlemanSpec-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B4CAE6C197C142A00821A97 /* Build configuration list for PBXProject "CoreFactoryGentlemanSpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4CAE6D197C142A00821A97 /* Debug */,
+				5B4CAE6E197C142A00821A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4CAE87197C824A00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4CAE85197C824A00821A97 /* Debug */,
+				5B4CAE86197C824A00821A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4CAEAC197C8C8D00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B4CAEAD197C8C8D00821A97 /* Debug */,
+				5B4CAEAE197C8C8D00821A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B4CAE69197C142A00821A97 /* Project object */;
+}

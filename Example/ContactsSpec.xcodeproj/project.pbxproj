@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BB847111981A2490063227D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB847101981A2490063227D /* XCTest.framework */; };
+		5BB847231981A2600063227D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB847101981A2490063227D /* XCTest.framework */; };
+		5BB847251981A2600063227D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB847241981A2600063227D /* Foundation.framework */; };
+		5BB847271981A2600063227D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB847261981A2600063227D /* UIKit.framework */; };
+		75837A53CC9E4B26B69F9015 /* libPods-ContactsSpec-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA00931FF1A45D5A685C5AC /* libPods-ContactsSpec-iOS.a */; };
+		D743D124BAE3465385D73EBF /* libPods-ContactsSpec-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2AF83F23564D7985E371C7 /* libPods-ContactsSpec-Mac.a */; };
+		F80327134305D3F402D39BF9 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F80323682DD5E3A04420CA5D /* GcovTestObserver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AA00931FF1A45D5A685C5AC /* libPods-ContactsSpec-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactsSpec-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB8470D1981A2490063227D /* ContactsSpec-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ContactsSpec-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB847101981A2490063227D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5BB847221981A2600063227D /* ContactsSpec-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ContactsSpec-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB847241981A2600063227D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BB847261981A2600063227D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6C2AF83F23564D7985E371C7 /* libPods-ContactsSpec-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactsSpec-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-iOS.xcconfig"; path = "Pods/Pods-ContactsSpec-iOS.xcconfig"; sourceTree = "<group>"; };
+		CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-Mac.xcconfig"; path = "Pods/Pods-ContactsSpec-Mac.xcconfig"; sourceTree = "<group>"; };
+		F80320424369D863E7D6FC82 /* ContactsSpec-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsSpec-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		F80323682DD5E3A04420CA5D /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
+		F803241960B7A36F452DEDF2 /* ContactsSpec-Mac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsSpec-Mac-Prefix.pch"; sourceTree = "<group>"; };
+		F80325F2B9F2E15F63B0944B /* ContactsSpec-Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "ContactsSpec-Mac-Info.plist"; sourceTree = "<group>"; };
+		F8032DD42E7FEEFCF8A36B26 /* GcovTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GcovTestObserver.h; sourceTree = "<group>"; };
+		F8032E02367C2DF5ABB78334 /* ContactsSpec-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "ContactsSpec-iOS-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BB8470A1981A2490063227D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB847111981A2490063227D /* XCTest.framework in Frameworks */,
+				D743D124BAE3465385D73EBF /* libPods-ContactsSpec-Mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB8471F1981A2600063227D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB847231981A2600063227D /* XCTest.framework in Frameworks */,
+				5BB847271981A2600063227D /* UIKit.framework in Frameworks */,
+				5BB847251981A2600063227D /* Foundation.framework in Frameworks */,
+				75837A53CC9E4B26B69F9015 /* libPods-ContactsSpec-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BB847021981A1DE0063227D = {
+			isa = PBXGroup;
+			children = (
+				5BB847121981A2490063227D /* ContactsSpec-Mac */,
+				5BB847281981A2600063227D /* ContactsSpec-iOS */,
+				5BB8470F1981A2490063227D /* Frameworks */,
+				5BB8470E1981A2490063227D /* Products */,
+				CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */,
+				B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */,
+				F8032DDAE40148E82A70AFB5 /* Classes */,
+				F8032105C3F51B3ED60F6621 /* Spec */,
+			);
+			sourceTree = "<group>";
+		};
+		5BB8470E1981A2490063227D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BB8470D1981A2490063227D /* ContactsSpec-Mac.xctest */,
+				5BB847221981A2600063227D /* ContactsSpec-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BB8470F1981A2490063227D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB847101981A2490063227D /* XCTest.framework */,
+				5BB847241981A2600063227D /* Foundation.framework */,
+				5BB847261981A2600063227D /* UIKit.framework */,
+				6C2AF83F23564D7985E371C7 /* libPods-ContactsSpec-Mac.a */,
+				1AA00931FF1A45D5A685C5AC /* libPods-ContactsSpec-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB847121981A2490063227D /* ContactsSpec-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F803241960B7A36F452DEDF2 /* ContactsSpec-Mac-Prefix.pch */,
+				F80325F2B9F2E15F63B0944B /* ContactsSpec-Mac-Info.plist */,
+			);
+			path = "ContactsSpec-Mac";
+			sourceTree = "<group>";
+		};
+		5BB847281981A2600063227D /* ContactsSpec-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F80320424369D863E7D6FC82 /* ContactsSpec-iOS-Prefix.pch */,
+				F8032E02367C2DF5ABB78334 /* ContactsSpec-iOS-Info.plist */,
+			);
+			path = "ContactsSpec-iOS";
+			sourceTree = "<group>";
+		};
+		F8032105C3F51B3ED60F6621 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				F8032C80E440BDFEB243B3D7 /* Contacts */,
+				F80329CF77FBF190C619BF25 /* Helpers */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		F80327AB6D041392FA8B07E7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F80329CF77FBF190C619BF25 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8032DD42E7FEEFCF8A36B26 /* GcovTestObserver.h */,
+				F80323682DD5E3A04420CA5D /* GcovTestObserver.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8032C80E440BDFEB243B3D7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F8032DDAE40148E82A70AFB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F80327AB6D041392FA8B07E7 /* Contacts */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BB8470C1981A2490063227D /* ContactsSpec-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB8471B1981A2490063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-Mac" */;
+			buildPhases = (
+				35634C71C6034FAFBD63B7A1 /* Check Pods Manifest.lock */,
+				5BB847091981A2490063227D /* Sources */,
+				5BB8470A1981A2490063227D /* Frameworks */,
+				5BB8470B1981A2490063227D /* Resources */,
+				B7C3B5A86588483EA4F500DA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ContactsSpec-Mac";
+			productName = "ContactsSpec-Mac";
+			productReference = 5BB8470D1981A2490063227D /* ContactsSpec-Mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BB847211981A2600063227D /* ContactsSpec-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB847311981A2600063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-iOS" */;
+			buildPhases = (
+				EFEBD1D2D3AF432194E9C5D0 /* Check Pods Manifest.lock */,
+				5BB8471E1981A2600063227D /* Sources */,
+				5BB8471F1981A2600063227D /* Frameworks */,
+				5BB847201981A2600063227D /* Resources */,
+				A7D380D9095D49738C7E6D0F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ContactsSpec-iOS";
+			productName = "ContactsSpec-iOS";
+			productReference = 5BB847221981A2600063227D /* ContactsSpec-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BB847031981A1DE0063227D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 5BB847061981A1DE0063227D /* Build configuration list for PBXProject "ContactsSpec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BB847021981A1DE0063227D;
+			productRefGroup = 5BB8470E1981A2490063227D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BB8470C1981A2490063227D /* ContactsSpec-Mac */,
+				5BB847211981A2600063227D /* ContactsSpec-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BB8470B1981A2490063227D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB847201981A2600063227D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35634C71C6034FAFBD63B7A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D380D9095D49738C7E6D0F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ContactsSpec-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7C3B5A86588483EA4F500DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ContactsSpec-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEBD1D2D3AF432194E9C5D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BB847091981A2490063227D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80327134305D3F402D39BF9 /* GcovTestObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB8471E1981A2600063227D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BB847071981A1DE0063227D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+			};
+			name = Debug;
+		};
+		5BB847081981A1DE0063227D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+			};
+			name = Release;
+		};
+		5BB8471C1981A2490063227D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContactsSpec-Mac/ContactsSpec-Mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ContactsSpec-Mac/ContactsSpec-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5BB8471D1981A2490063227D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContactsSpec-Mac/ContactsSpec-Mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ContactsSpec-Mac/ContactsSpec-Mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		5BB847321981A2600063227D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContactsSpec-iOS/ContactsSpec-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ContactsSpec-iOS/ContactsSpec-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5BB847331981A2600063227D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ContactsSpec-iOS/ContactsSpec-iOS-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ContactsSpec-iOS/ContactsSpec-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BB847061981A1DE0063227D /* Build configuration list for PBXProject "ContactsSpec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB847071981A1DE0063227D /* Debug */,
+				5BB847081981A1DE0063227D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB8471B1981A2490063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB8471C1981A2490063227D /* Debug */,
+				5BB8471D1981A2490063227D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB847311981A2600063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB847321981A2600063227D /* Debug */,
+				5BB847331981A2600063227D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BB847031981A1DE0063227D /* Project object */;
+}

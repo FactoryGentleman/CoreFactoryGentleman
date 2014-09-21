@@ -2,7 +2,7 @@ def needed_pods
   pod 'Specta'
   pod 'Expecta'
   pod 'OCMockito'
-  pod 'FactoryGentleman'
+  pod 'FactoryGentleman', '~> 1.2.0'
 end
 
 target 'CoreFactoryGentlemanSpec-iOS' do

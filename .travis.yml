@@ -1,8 +1,8 @@
 language: objective-c
 before_install:
     - brew update
-    - brew upgrade xctool
-    - brew upgrade mogenerator
+    - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+    - if brew outdated | grep -qx mogenerator; then brew upgrade mogenerator; fi
     - sudo easy_install cpp-coveralls
     - gem install cocoapods
     - gem install rake

@@ -8,12 +8,12 @@ Pod::Spec.new do |s|
   s.author = {
     'Michael England' => 'mg.england@gmail.com'
   }
-  s.source = { :git => 'git@github.com:soundcloud/CoreFactoryGentleman.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/soundcloud/CoreFactoryGentleman.git', :tag => s.version.to_s }
 
   s.source_files = 'Classes/CoreFactoryGentleman/*.{h,m}'
   s.public_header_files = 'Classes/CoreFactoryGentleman/*.h'
 
-  s.dependency 'FactoryGentleman', '~> 1.2.0'
+  s.dependency 'FactoryGentleman', '~> 1.2.1'
   s.frameworks = 'CoreData'
   s.requires_arc = true
 end

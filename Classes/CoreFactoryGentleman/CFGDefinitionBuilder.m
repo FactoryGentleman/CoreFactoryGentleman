@@ -1,5 +1,7 @@
 #import "CFGDefinitionBuilder.h"
 
+#import <CoreData/CoreData.h>
+
 #import "CFGCoreFactoryGentleman.h"
 #import "CFGFactoryDefinition.h"
 

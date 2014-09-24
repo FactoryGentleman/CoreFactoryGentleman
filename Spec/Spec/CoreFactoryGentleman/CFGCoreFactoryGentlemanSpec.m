@@ -12,7 +12,7 @@ SpecBegin(CFGFactoryGentleman)
         moc = [NSManagedObjectContextFactory testContext];
     });
 
-    describe(@"FGBuild", ^{
+    describe(@"CFGBuild", ^{
         before(^{
             builtObject = CFGBuild(moc, [SimpleObject class]);
         });
@@ -22,9 +22,14 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@2);
         });
+
+        it(@"doesn't save the context", ^{
+            expect(moc.hasChanges).to.beTruthy();
+        });
+
     });
 
-    describe(@"FGBuildTrait", ^{
+    describe(@"CFGBuildTrait", ^{
         before(^{
             builtObject = CFGBuildTrait(moc, [SimpleObject class], @"trait");
         });
@@ -34,9 +39,13 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@7);
         });
+
+        it(@"doesn't save the context", ^{
+            expect(moc.hasChanges).to.beTruthy();
+        });
     });
 
-    describe(@"FGBuildWith", ^{
+    describe(@"CFGBuildWith", ^{
         context(@"when definer is dictionary", ^{
             before(^{
                 builtObject = CFGBuildWith(moc, [SimpleObject class], @{ @"someMandatoryString" : @"overriden" });
@@ -46,6 +55,10 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
+            });
+
+            it(@"doesn't save the context", ^{
+                expect(moc.hasChanges).to.beTruthy();
             });
         });
 
@@ -61,10 +74,14 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
             });
+
+            it(@"doesn't save the context", ^{
+                expect(moc.hasChanges).to.beTruthy();
+            });
         });
     });
 
-    describe(@"FGBuildTraitWith", ^{
+    describe(@"CFGBuildTraitWith", ^{
         context(@"when definer is dictionary", ^{
             before(^{
                 builtObject = CFGBuildTraitWith(moc, [SimpleObject class], @"trait", @{ @"someMandatoryString" : @"overriden" });
@@ -74,6 +91,10 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+            });
+
+            it(@"doesn't save the context", ^{
+                expect(moc.hasChanges).to.beTruthy();
             });
         });
 
@@ -88,6 +109,114 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+            });
+
+            it(@"doesn't save the context", ^{
+                expect(moc.hasChanges).to.beTruthy();
+            });
+        });
+    });
+
+    describe(@"CFGCreate", ^{
+        before(^{
+            builtObject = CFGCreate(moc, [SimpleObject class]);
+        });
+
+        it(@"builds an object from the definition", ^{
+            expect(builtObject.managedObjectContext).to.equal(moc);
+            expect(builtObject.someMandatoryString).to.equal(@"foo");
+            expect(builtObject.additionalInteger).to.equal(@2);
+        });
+
+        it(@"saves the context", ^{
+            expect(moc.hasChanges).to.beFalsy();
+        });
+    });
+
+    describe(@"CFGCreateTrait", ^{
+        before(^{
+            builtObject = CFGCreateTrait(moc, [SimpleObject class], @"trait");
+        });
+
+        it(@"builds an object from the trait definition", ^{
+            expect(builtObject.managedObjectContext).to.equal(moc);
+            expect(builtObject.someMandatoryString).to.equal(@"foo");
+            expect(builtObject.additionalInteger).to.equal(@7);
+        });
+
+        it(@"saves the context", ^{
+            expect(moc.hasChanges).to.beFalsy();
+        });
+    });
+
+    describe(@"CFGCreateWith", ^{
+        context(@"when definer is dictionary", ^{
+            before(^{
+                builtObject = CFGCreateWith(moc, [SimpleObject class], @{ @"someMandatoryString" : @"overriden" });
+            });
+
+            it(@"builds an object from the overriden definition", ^{
+                expect(builtObject.managedObjectContext).to.equal(moc);
+                expect(builtObject.someMandatoryString).to.equal(@"overriden");
+                expect(builtObject.additionalInteger).to.equal(@2);
+            });
+
+            it(@"saves the context", ^{
+                expect(moc.hasChanges).to.beFalsy();
+            });
+        });
+
+        context(@"when definer is block", ^{
+            before(^{
+                builtObject = CFGCreateWith(moc, [SimpleObject class], ^(CFGDefinitionBuilder *builder) {
+                    [builder field:@"someMandatoryString" value:@"overriden"];
+                });
+            });
+
+            it(@"builds an object from the overriden definition", ^{
+                expect(builtObject.managedObjectContext).to.equal(moc);
+                expect(builtObject.someMandatoryString).to.equal(@"overriden");
+                expect(builtObject.additionalInteger).to.equal(@2);
+            });
+
+            it(@"saves the context", ^{
+                expect(moc.hasChanges).to.beFalsy();
+            });
+        });
+    });
+
+    describe(@"CFGCreateTraitWith", ^{
+        context(@"when definer is dictionary", ^{
+            before(^{
+                builtObject = CFGCreateTraitWith(moc, [SimpleObject class], @"trait", @{ @"someMandatoryString" : @"overriden" });
+            });
+
+            it(@"builds an object from the overriden trait definition", ^{
+                expect(builtObject.managedObjectContext).to.equal(moc);
+                expect(builtObject.someMandatoryString).to.equal(@"overriden");
+                expect(builtObject.additionalInteger).to.equal(@7);
+            });
+
+            it(@"saves the context", ^{
+                expect(moc.hasChanges).to.beFalsy();
+            });
+        });
+
+        context(@"when definer is block", ^{
+            before(^{
+                builtObject = CFGCreateTraitWith(moc, [SimpleObject class], @"trait", ^(CFGDefinitionBuilder *builder) {
+                    [builder field:@"someMandatoryString" value:@"overriden"];
+                });
+            });
+
+            it(@"builds an object from the overriden trait definition", ^{
+                expect(builtObject.managedObjectContext).to.equal(moc);
+                expect(builtObject.someMandatoryString).to.equal(@"overriden");
+                expect(builtObject.additionalInteger).to.equal(@7);
+            });
+
+            it(@"saves the context", ^{
+                expect(moc.hasChanges).to.beFalsy();
             });
         });
     });

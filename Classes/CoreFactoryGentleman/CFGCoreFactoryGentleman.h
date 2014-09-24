@@ -26,3 +26,7 @@ extern id CFGBuild(NSManagedObjectContext *context, Class objectClass);
 extern id CFGBuildTrait(NSManagedObjectContext *context, Class objectClass, NSString *trait);
 extern id CFGBuildWith(NSManagedObjectContext *context, Class objectClass, id factoryDefiner);
 extern id CFGBuildTraitWith(NSManagedObjectContext *context, Class objectClass, NSString *trait, id factoryDefiner);
+extern id CFGCreate(NSManagedObjectContext *context, Class objectClass);
+extern id CFGCreateTrait(NSManagedObjectContext *context, Class objectClass, NSString *trait);
+extern id CFGCreateWith(NSManagedObjectContext *context, Class objectClass, id factoryDefiner);
+extern id CFGCreateTraitWith(NSManagedObjectContext *context, Class objectClass, NSString *trait, id factoryDefiner);

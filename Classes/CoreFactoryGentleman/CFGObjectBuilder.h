@@ -7,4 +7,6 @@
                     objectClass:(Class)objectClass
                        readonly:(BOOL)readonly
                      definition:(CFGFactoryDefinition *)definition;
+
+- (id)create;
 @end

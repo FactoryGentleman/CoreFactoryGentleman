@@ -1,7 +1,7 @@
+#import <CoreData/CoreData.h>
 #import "CFGObjectBuilder.h"
 
 @interface CFGObjectBuilder ()
-@property (nonatomic, readonly) FGObjectBuilder *baseBuilder;
 @property (nonatomic, readonly) NSManagedObjectContext *context;
 @end
 
@@ -24,9 +24,26 @@
     return self;
 }
 
+- (id)create
+{
+    id createdObject = [self build];
+    [self saveObject:createdObject];
+    return createdObject;
+}
+
 - (id)build
 {
     return [super build];
+}
+
+#pragma mark - Private
+
+- (void)saveObject:(id)object
+{
+    NSError *error;
+    if (![self.context save:&error]) {
+        [NSException raise:@"Error saving object" format:@"Failed to save %@ with error %@", object, error];
+    }
 }
 
 @end

@@ -17,4 +17,20 @@
     return self;
 }
 
+- (instancetype)mergedWithDefinition:(id)other
+{
+    CFGFactoryDefinition *otherDefinition = other;
+    return [[CFGFactoryDefinition alloc] initWithBaseDefinition:[super mergedWithDefinition:otherDefinition]
+                                           coreFieldDefinitions:[self mergedCoreFieldDefinitionsWith:otherDefinition.coreFieldDefinitions]];
+}
+
+#pragma mark - Private
+
+- (NSDictionary *)mergedCoreFieldDefinitionsWith:(NSDictionary *)otherCoreFieldDefinitions
+{
+    NSMutableDictionary *mergedFieldDefinitions = [self.coreFieldDefinitions mutableCopy];
+    [mergedFieldDefinitions addEntriesFromDictionary:otherCoreFieldDefinitions];
+    return [mergedFieldDefinitions copy];
+}
+
 @end

@@ -5,4 +5,6 @@
 
 - (instancetype)initWithBaseDefinition:(FGFactoryDefinition *)baseDefinition
                   coreFieldDefinitions:(NSDictionary *)coreFieldDefinitions;
+
+- (instancetype)mergedWithDefinition:(id)other;
 @end

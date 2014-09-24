@@ -3,21 +3,16 @@
 
 #import <CoreData/CoreData.h>
 
-
 extern const struct SimpleObjectAttributes {
 	__unsafe_unretained NSString *additionalInteger;
 	__unsafe_unretained NSString *someMandatoryString;
 } SimpleObjectAttributes;
 
 extern const struct SimpleObjectRelationships {
+	__unsafe_unretained NSString *associatedObject;
 } SimpleObjectRelationships;
 
-extern const struct SimpleObjectFetchedProperties {
-} SimpleObjectFetchedProperties;
-
-
-
-
+@class AssociatedObject;
 
 @interface SimpleObjectID : NSManagedObjectID {}
 @end
@@ -26,45 +21,27 @@ extern const struct SimpleObjectFetchedProperties {
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
-- (SimpleObjectID*)objectID;
-
-
-
-
+@property (nonatomic, readonly, strong) SimpleObjectID* objectID;
 
 @property (nonatomic, strong) NSNumber* additionalInteger;
 
-
-
-@property int64_t additionalIntegerValue;
+@property (atomic) int64_t additionalIntegerValue;
 - (int64_t)additionalIntegerValue;
 - (void)setAdditionalIntegerValue:(int64_t)value_;
 
 //- (BOOL)validateAdditionalInteger:(id*)value_ error:(NSError**)error_;
 
-
-
-
-
 @property (nonatomic, strong) NSString* someMandatoryString;
-
-
 
 //- (BOOL)validateSomeMandatoryString:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) AssociatedObject *associatedObject;
 
-
-
-
-
-@end
-
-@interface _SimpleObject (CoreDataGeneratedAccessors)
+//- (BOOL)validateAssociatedObject:(id*)value_ error:(NSError**)error_;
 
 @end
 
 @interface _SimpleObject (CoreDataGeneratedPrimitiveAccessors)
-
 
 - (NSNumber*)primitiveAdditionalInteger;
 - (void)setPrimitiveAdditionalInteger:(NSNumber*)value;
@@ -72,13 +49,10 @@ extern const struct SimpleObjectFetchedProperties {
 - (int64_t)primitiveAdditionalIntegerValue;
 - (void)setPrimitiveAdditionalIntegerValue:(int64_t)value_;
 
-
-
-
 - (NSString*)primitiveSomeMandatoryString;
 - (void)setPrimitiveSomeMandatoryString:(NSString*)value;
 
-
-
+- (AssociatedObject*)primitiveAssociatedObject;
+- (void)setPrimitiveAssociatedObject:(AssociatedObject*)value;
 
 @end

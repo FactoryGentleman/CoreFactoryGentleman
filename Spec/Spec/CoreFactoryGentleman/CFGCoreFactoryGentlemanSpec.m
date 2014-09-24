@@ -3,6 +3,7 @@
 #import "SimpleObject.h"
 
 #import "NSManagedObjectContextFactory.h"
+#import "AssociatedObject.h"
 
 SpecBegin(CFGFactoryGentleman)
     __block NSManagedObjectContext *moc;
@@ -21,12 +22,12 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.managedObjectContext).to.equal(moc);
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@2);
+            expect(builtObject.associatedObject.anotherString).to.equal(@"another");
         });
 
         it(@"doesn't save the context", ^{
             expect(moc.hasChanges).to.beTruthy();
         });
-
     });
 
     describe(@"CFGBuildTrait", ^{
@@ -38,6 +39,7 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.managedObjectContext).to.equal(moc);
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@7);
+            expect(builtObject.associatedObject.anotherString).to.equal(@"another");
         });
 
         it(@"doesn't save the context", ^{
@@ -55,6 +57,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"doesn't save the context", ^{
@@ -73,6 +76,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"doesn't save the context", ^{
@@ -91,6 +95,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"doesn't save the context", ^{
@@ -109,6 +114,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"doesn't save the context", ^{
@@ -126,6 +132,7 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.managedObjectContext).to.equal(moc);
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@2);
+            expect(builtObject.associatedObject.anotherString).to.equal(@"another");
         });
 
         it(@"saves the context", ^{
@@ -142,6 +149,7 @@ SpecBegin(CFGFactoryGentleman)
             expect(builtObject.managedObjectContext).to.equal(moc);
             expect(builtObject.someMandatoryString).to.equal(@"foo");
             expect(builtObject.additionalInteger).to.equal(@7);
+            expect(builtObject.associatedObject.anotherString).to.equal(@"another");
         });
 
         it(@"saves the context", ^{
@@ -159,6 +167,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"saves the context", ^{
@@ -177,6 +186,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@2);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"saves the context", ^{
@@ -195,6 +205,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"saves the context", ^{
@@ -213,6 +224,7 @@ SpecBegin(CFGFactoryGentleman)
                 expect(builtObject.managedObjectContext).to.equal(moc);
                 expect(builtObject.someMandatoryString).to.equal(@"overriden");
                 expect(builtObject.additionalInteger).to.equal(@7);
+                expect(builtObject.associatedObject.anotherString).to.equal(@"another");
             });
 
             it(@"saves the context", ^{

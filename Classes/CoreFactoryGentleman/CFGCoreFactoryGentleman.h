@@ -1,19 +1,39 @@
 #import "CFGFactoryDefiner.h"
 
 @interface CFGCoreFactoryGentleman : NSObject
+- (id)createForContext:(NSManagedObjectContext *)context
+           objectClass:(Class)objectClass
+              readonly:(BOOL)readonly;
+
 - (id)buildForContext:(NSManagedObjectContext *)context
           objectClass:(Class)objectClass
              readonly:(BOOL)readonly;
+
+- (id)createForContext:(NSManagedObjectContext *)context
+           objectClass:(Class)objectClass
+              readonly:(BOOL)readonly
+                 trait:(NSString *)trait;
 
 - (id)buildForContext:(NSManagedObjectContext *)context
           objectClass:(Class)objectClass
              readonly:(BOOL)readonly
                 trait:(NSString *)trait;
 
+- (id)createForContext:(NSManagedObjectContext *)context
+           objectClass:(Class)objectClass
+              readonly:(BOOL)readonly
+    withFactoryDefiner:(id)factoryDefiner;
+
 - (id)buildForContext:(NSManagedObjectContext *)context
           objectClass:(Class)objectClass
              readonly:(BOOL)readonly
    withFactoryDefiner:(id)factoryDefiner;
+
+- (id)createForContext:(NSManagedObjectContext *)context
+           objectClass:(Class)objectClass
+              readonly:(BOOL)readonly
+                 trait:(NSString *)trait
+    withFactoryDefiner:(id)factoryDefiner;
 
 - (id)buildForContext:(NSManagedObjectContext *)context
           objectClass:(Class)objectClass

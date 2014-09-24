@@ -2,11 +2,14 @@
 
 #import "CFGDefinitionBuilder.h"
 
-#define CFGFactoryDefine(__CLASS__, __DEFINITION_BLOCK__) \
-@interface __CLASS__##FGFactoryDefiner : FGFactoryDefiner \
+@interface CFGFactoryDefiner : FGFactoryDefiner
+@end
+
+#define CFGFactoryBegin(__CLASS__) \
+@interface __CLASS__##CFGFactoryDefiner : CFGFactoryDefiner \
 @property (nonatomic, retain) Class class; \
 @end \
-@implementation __CLASS__##FGFactoryDefiner \
+@implementation __CLASS__##CFGFactoryDefiner \
 - (instancetype)init \
 { \
     self = [super initWithObjectClass:[__CLASS__ class]]; \
@@ -16,8 +19,8 @@
 { \
     CFGDefinitionBuilder *builder = (CFGDefinitionBuilder *)[CFGDefinitionBuilder builder]; \
     NSMutableDictionary *traitDefiners = [[NSMutableDictionary alloc] init]; \
-    void (^definitionBlock)(CFGDefinitionBuilder *, NSMutableDictionary *traitDefiners) = __DEFINITION_BLOCK__; \
-    definitionBlock(builder, traitDefiners); \
+
+#define CFGFactoryEnd \
     [self registerBaseDefinition:[builder build] \
                    traitDefiners:traitDefiners]; \
 } \

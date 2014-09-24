@@ -9,9 +9,7 @@ const struct SimpleObjectAttributes SimpleObjectAttributes = {
 };
 
 const struct SimpleObjectRelationships SimpleObjectRelationships = {
-};
-
-const struct SimpleObjectFetchedProperties SimpleObjectFetchedProperties = {
+	.associatedObject = @"associatedObject",
 };
 
 @implementation SimpleObjectID
@@ -39,7 +37,7 @@ const struct SimpleObjectFetchedProperties SimpleObjectFetchedProperties = {
 
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
-	
+
 	if ([key isEqualToString:@"additionalIntegerValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"additionalInteger"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -49,12 +47,7 @@ const struct SimpleObjectFetchedProperties SimpleObjectFetchedProperties = {
 	return keyPaths;
 }
 
-
-
-
 @dynamic additionalInteger;
-
-
 
 - (int64_t)additionalIntegerValue {
 	NSNumber *result = [self additionalInteger];
@@ -74,20 +67,9 @@ const struct SimpleObjectFetchedProperties SimpleObjectFetchedProperties = {
 	[self setPrimitiveAdditionalInteger:[NSNumber numberWithLongLong:value_]];
 }
 
-
-
-
-
 @dynamic someMandatoryString;
 
-
-
-
-
-
-
-
-
-
+@dynamic associatedObject;
 
 @end
+

@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/CoreFactoryGentleman/*.{h,m}'
   s.public_header_files = 'Classes/CoreFactoryGentleman/*.h'
 
-  s.dependency 'FactoryGentleman', '~> 1.2.1'
+  s.dependency 'FactoryGentleman', '~> 1.2.2'
   s.frameworks = 'CoreData'
   s.requires_arc = true
 end

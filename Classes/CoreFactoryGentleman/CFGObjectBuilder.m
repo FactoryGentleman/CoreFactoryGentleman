@@ -53,8 +53,9 @@
 {
     for (NSString *fieldName in [self coreFieldDefinitions]) {
         id (^fieldValueBlock)(NSManagedObjectContext *) = [self coreFieldDefinitions][fieldName];
-        if ([object respondsToSelector:@selector(performSelector:withObject:)]) {
-            [object performSelector:[self setterForField:fieldName]
+        SEL setter = [self setterForField:fieldName];
+        if ([object respondsToSelector:setter]) {
+            [object performSelector:setter
                          withObject:fieldValueBlock(self.context)];
         }
     };

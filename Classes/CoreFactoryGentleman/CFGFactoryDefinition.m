@@ -21,14 +21,19 @@
 {
     CFGFactoryDefinition *otherDefinition = other;
     return [[CFGFactoryDefinition alloc] initWithBaseDefinition:[super mergedWithDefinition:otherDefinition]
-                                           coreFieldDefinitions:[self mergedCoreFieldDefinitionsWith:otherDefinition.coreFieldDefinitions]];
+                                           coreFieldDefinitions:[self mergedCoreFieldDefinitionsWith:otherDefinition.coreFieldDefinitions
+                                                                             minusOtherFieldsDefined:otherDefinition.fieldDefinitions.allKeys]];
 }
 
 #pragma mark - Private
 
 - (NSDictionary *)mergedCoreFieldDefinitionsWith:(NSDictionary *)otherCoreFieldDefinitions
+                         minusOtherFieldsDefined:(NSArray *)otherFieldsDefined
 {
     NSMutableDictionary *mergedFieldDefinitions = [self.coreFieldDefinitions mutableCopy];
+    for (NSString *fieldName in otherFieldsDefined) {
+        [mergedFieldDefinitions removeObjectForKey:fieldName];
+    }
     [mergedFieldDefinitions addEntriesFromDictionary:otherCoreFieldDefinitions];
     return [mergedFieldDefinitions copy];
 }

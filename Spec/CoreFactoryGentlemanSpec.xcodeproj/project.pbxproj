@@ -278,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4CAE87197C824A00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-iOS" */;
 			buildPhases = (
+				5BF0088E1BC580DF00744397 /* Clean Coverage */,
 				A033193950FD446784242787 /* Check Pods Manifest.lock */,
 				5B4CAE6F197C824A00821A97 /* Sources */,
 				5B4CAE70197C824A00821A97 /* Frameworks */,
@@ -297,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4CAEAC197C8C8D00821A97 /* Build configuration list for PBXNativeTarget "CoreFactoryGentlemanSpec-Mac" */;
 			buildPhases = (
+				5BF0088F1BC580EE00744397 /* Clean Coverage */,
 				D17E890E85F1499DB1221FAA /* Check Pods Manifest.lock */,
 				5B4CAE9D197C8C8D00821A97 /* Sources */,
 				5B4CAE9E197C8C8D00821A97 /* Frameworks */,
@@ -356,6 +358,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5BF0088E1BC580DF00744397 /* Clean Coverage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Clean Coverage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INTERMEDIATES_DIR=\"${BUILD_DIR}/../Intermediates\"\n\nif [ -e \"${INTERMEDIATES_DIR}\" ]; then\nfind ${INTERMEDIATES_DIR} -type f -name \"*.gcda\" -exec rm -rf {} \\;\nfi\n";
+		};
+		5BF0088F1BC580EE00744397 /* Clean Coverage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Clean Coverage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INTERMEDIATES_DIR=\"${BUILD_DIR}/../Intermediates\"\n\nif [ -e \"${INTERMEDIATES_DIR}\" ]; then\nfind ${INTERMEDIATES_DIR} -type f -name \"*.gcda\" -exec rm -rf {} \\;\nfi\n";
+		};
 		7D9A4D8F0D3B4EA8A6B14B51 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

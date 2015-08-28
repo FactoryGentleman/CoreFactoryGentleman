@@ -157,12 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB8471B1981A2490063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-Mac" */;
 			buildPhases = (
+				5BF008901BC5810400744397 /* Clean Coverage */,
 				35634C71C6034FAFBD63B7A1 /* Check Pods Manifest.lock */,
 				5BB847091981A2490063227D /* Sources */,
 				5BB8470A1981A2490063227D /* Frameworks */,
 				5BB8470B1981A2490063227D /* Resources */,
 				B7C3B5A86588483EA4F500DA /* Copy Pods Resources */,
-				5BF008901BC5810400744397 /* Clean Coverage */,
 			);
 			buildRules = (
 			);
@@ -177,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB847311981A2600063227D /* Build configuration list for PBXNativeTarget "ContactsSpec-iOS" */;
 			buildPhases = (
+				5BF008911BC5810E00744397 /* Clean Coverage */,
 				EFEBD1D2D3AF432194E9C5D0 /* Check Pods Manifest.lock */,
 				5BB8471E1981A2600063227D /* Sources */,
 				5BB8471F1981A2600063227D /* Frameworks */,
 				5BB847201981A2600063227D /* Resources */,
 				A7D380D9095D49738C7E6D0F /* Copy Pods Resources */,
-				5BF008911BC5810E00744397 /* Clean Coverage */,
 			);
 			buildRules = (
 			);

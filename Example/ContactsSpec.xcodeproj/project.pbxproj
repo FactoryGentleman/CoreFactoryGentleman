@@ -13,7 +13,6 @@
 		5BB847271981A2600063227D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB847261981A2600063227D /* UIKit.framework */; };
 		75837A53CC9E4B26B69F9015 /* libPods-ContactsSpec-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA00931FF1A45D5A685C5AC /* libPods-ContactsSpec-iOS.a */; };
 		D743D124BAE3465385D73EBF /* libPods-ContactsSpec-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2AF83F23564D7985E371C7 /* libPods-ContactsSpec-Mac.a */; };
-		F80327134305D3F402D39BF9 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F80323682DD5E3A04420CA5D /* GcovTestObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +22,14 @@
 		5BB847221981A2600063227D /* ContactsSpec-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ContactsSpec-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB847241981A2600063227D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5BB847261981A2600063227D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		685AA1C1119A7166DBDC184F /* Pods-ContactsSpec-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsSpec-Mac/Pods-ContactsSpec-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		697B172751878985C0A23BD0 /* Pods-ContactsSpec-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsSpec-Mac/Pods-ContactsSpec-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2AF83F23564D7985E371C7 /* libPods-ContactsSpec-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactsSpec-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-iOS.xcconfig"; path = "Pods/Pods-ContactsSpec-iOS.xcconfig"; sourceTree = "<group>"; };
-		CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-Mac.xcconfig"; path = "Pods/Pods-ContactsSpec-Mac.xcconfig"; sourceTree = "<group>"; };
+		8936135129081FF65FF92368 /* Pods-ContactsSpec-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsSpec-iOS/Pods-ContactsSpec-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DFF31DAD23FF26B688F74722 /* Pods-ContactsSpec-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsSpec-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsSpec-iOS/Pods-ContactsSpec-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F80320424369D863E7D6FC82 /* ContactsSpec-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsSpec-iOS-Prefix.pch"; sourceTree = "<group>"; };
-		F80323682DD5E3A04420CA5D /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
 		F803241960B7A36F452DEDF2 /* ContactsSpec-Mac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsSpec-Mac-Prefix.pch"; sourceTree = "<group>"; };
 		F80325F2B9F2E15F63B0944B /* ContactsSpec-Mac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "ContactsSpec-Mac-Info.plist"; sourceTree = "<group>"; };
-		F8032DD42E7FEEFCF8A36B26 /* GcovTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GcovTestObserver.h; sourceTree = "<group>"; };
 		F8032E02367C2DF5ABB78334 /* ContactsSpec-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "ContactsSpec-iOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,10 +64,9 @@
 				5BB847281981A2600063227D /* ContactsSpec-iOS */,
 				5BB8470F1981A2490063227D /* Frameworks */,
 				5BB8470E1981A2490063227D /* Products */,
-				CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */,
-				B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */,
 				F8032DDAE40148E82A70AFB5 /* Classes */,
 				F8032105C3F51B3ED60F6621 /* Spec */,
+				706E83FA0CD271104F3DD529 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,11 +109,21 @@
 			path = "ContactsSpec-iOS";
 			sourceTree = "<group>";
 		};
+		706E83FA0CD271104F3DD529 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				697B172751878985C0A23BD0 /* Pods-ContactsSpec-Mac.debug.xcconfig */,
+				685AA1C1119A7166DBDC184F /* Pods-ContactsSpec-Mac.release.xcconfig */,
+				8936135129081FF65FF92368 /* Pods-ContactsSpec-iOS.debug.xcconfig */,
+				DFF31DAD23FF26B688F74722 /* Pods-ContactsSpec-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8032105C3F51B3ED60F6621 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
 				F8032C80E440BDFEB243B3D7 /* Contacts */,
-				F80329CF77FBF190C619BF25 /* Helpers */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -125,15 +133,6 @@
 			children = (
 			);
 			path = Contacts;
-			sourceTree = "<group>";
-		};
-		F80329CF77FBF190C619BF25 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				F8032DD42E7FEEFCF8A36B26 /* GcovTestObserver.h */,
-				F80323682DD5E3A04420CA5D /* GcovTestObserver.m */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F8032C80E440BDFEB243B3D7 /* Contacts */ = {
@@ -263,7 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ContactsSpec-iOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactsSpec-iOS/Pods-ContactsSpec-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7C3B5A86588483EA4F500DA /* Copy Pods Resources */ = {
@@ -278,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ContactsSpec-Mac-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactsSpec-Mac/Pods-ContactsSpec-Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EFEBD1D2D3AF432194E9C5D0 /* Check Pods Manifest.lock */ = {
@@ -303,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F80327134305D3F402D39BF9 /* GcovTestObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +333,7 @@
 		};
 		5BB8471C1981A2490063227D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */;
+			baseConfigurationReference = 697B172751878985C0A23BD0 /* Pods-ContactsSpec-Mac.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -383,7 +381,7 @@
 		};
 		5BB8471D1981A2490063227D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA41235A0B6641048D392D91 /* Pods-ContactsSpec-Mac.xcconfig */;
+			baseConfigurationReference = 685AA1C1119A7166DBDC184F /* Pods-ContactsSpec-Mac.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -425,7 +423,7 @@
 		};
 		5BB847321981A2600063227D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */;
+			baseConfigurationReference = 8936135129081FF65FF92368 /* Pods-ContactsSpec-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -473,7 +471,7 @@
 		};
 		5BB847331981A2600063227D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1BC441A50884483AD0E76DF /* Pods-ContactsSpec-iOS.xcconfig */;
+			baseConfigurationReference = DFF31DAD23FF26B688F74722 /* Pods-ContactsSpec-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

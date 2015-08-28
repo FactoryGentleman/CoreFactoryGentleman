@@ -14,7 +14,6 @@
 		5B4CAE7B197C824A00821A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE7A197C824A00821A97 /* UIKit.framework */; };
 		5B4CAEA2197C8C8D00821A97 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4CAE76197C824A00821A97 /* XCTest.framework */; };
 		F80320248EC2208E2E8CE118 /* CFGObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F8032298F2F31E1BC8FEFE98 /* CFGObjectBuilder.m */; };
-		F803203700DB835D6F74A857 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F803206C57B99904B30639E5 /* GcovTestObserver.m */; };
 		F803218D371429D539968B0F /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F80327C37077307DF90D18EE /* AssociatedObject.m */; };
 		F80321FBB81B659EE578DFF6 /* SimpleObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F80328DC92C6D1D7289E61ED /* SimpleObjectFactory.m */; };
 		F80322194982DCD40149C9CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8032519F6BEA3609247560B /* CoreData.framework */; };
@@ -37,7 +36,6 @@
 		F8032B06F994C2476B614AD4 /* CFGCoreFactoryGentlemanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F803222C1AF2F4570A81E0F4 /* CFGCoreFactoryGentlemanSpec.m */; };
 		F8032B7913269E073F22B695 /* CFGFactoryDefiner.m in Sources */ = {isa = PBXBuildFile; fileRef = F80329690249640A5C276840 /* CFGFactoryDefiner.m */; };
 		F8032BA513FD36A36E3EDB12 /* AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F80327C37077307DF90D18EE /* AssociatedObject.m */; };
-		F8032C8E61A670A58831D337 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F803206C57B99904B30639E5 /* GcovTestObserver.m */; };
 		F8032CA82180716C2FE6719C /* NSManagedObjectContextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8032D5F8F7DB600E4A9F580 /* NSManagedObjectContextFactory.m */; };
 		F8032D5B52B05EF85AEA4397 /* CFGCoreFactoryGentleman.m in Sources */ = {isa = PBXBuildFile; fileRef = F8032C189C4590135D34C8C7 /* CFGCoreFactoryGentleman.m */; };
 		F8032D7B9F59BB475BA945C3 /* SimpleObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F80328DC92C6D1D7289E61ED /* SimpleObjectFactory.m */; };
@@ -66,13 +64,11 @@
 		DDA15CEB6A3F4E2C9C66C877 /* libPods-CoreFactoryGentlemanSpec-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreFactoryGentlemanSpec-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD1ACA3859A2589EE0C0D46 /* Pods-CoreFactoryGentlemanSpec-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreFactoryGentlemanSpec-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreFactoryGentlemanSpec-Mac/Pods-CoreFactoryGentlemanSpec-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		F803202F0C5CF30DABADF269 /* CFGDefinitionBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGDefinitionBuilderSpec.m; sourceTree = "<group>"; };
-		F803206C57B99904B30639E5 /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
 		F803211862C16350B8B2657D /* _AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AssociatedObject.m; sourceTree = "<group>"; };
 		F80321BBF500FA4F154EE15F /* CFGFactoryDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGFactoryDefinition.m; sourceTree = "<group>"; };
 		F80321D28624256091B0E11D /* CFGCoreFactoryGentleman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGCoreFactoryGentleman.h; sourceTree = "<group>"; };
 		F803222C1AF2F4570A81E0F4 /* CFGCoreFactoryGentlemanSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGCoreFactoryGentlemanSpec.m; sourceTree = "<group>"; };
 		F8032298F2F31E1BC8FEFE98 /* CFGObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGObjectBuilder.m; sourceTree = "<group>"; };
-		F8032423DEF6BFEACE454D36 /* GcovTestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GcovTestObserver.h; sourceTree = "<group>"; };
 		F8032519F6BEA3609247560B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F803271063CB0843F79488C1 /* SimpleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleObject.m; sourceTree = "<group>"; };
 		F803279F9D2DD5F06285605A /* CFGDefinitionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGDefinitionBuilder.m; sourceTree = "<group>"; };
@@ -216,8 +212,6 @@
 		F803220D81E65B1055781AAF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F8032423DEF6BFEACE454D36 /* GcovTestObserver.h */,
-				F803206C57B99904B30639E5 /* GcovTestObserver.m */,
 				F8032D5F8F7DB600E4A9F580 /* NSManagedObjectContextFactory.m */,
 				F8032B594F58D3ABE3C77E1D /* NSManagedObjectContextFactory.h */,
 			);
@@ -336,8 +330,6 @@
 			mainGroup = 5B4CAE68197C142A00821A97;
 			productRefGroup = 5B4CAE74197C824A00821A97 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				5B4CAE72197C824A00821A97 /* CoreFactoryGentlemanSpec-iOS */,
@@ -431,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8032C8E61A670A58831D337 /* GcovTestObserver.m in Sources */,
 				F80324B5497C86E28D0BE2D0 /* Model.xcdatamodel in Sources */,
 				F80329AA78BFA2EF5EFAC935 /* SimpleObject.m in Sources */,
 				F8032DBAF72A77DCFEAFCCD1 /* _SimpleObject.m in Sources */,
@@ -457,7 +448,6 @@
 				F803269AC128B7337D0DE1E4 /* Model.xcdatamodel in Sources */,
 				F80324254EAFBCCD242EEC0F /* SimpleObject.m in Sources */,
 				F803249267AFFED4A20E1717 /* _SimpleObject.m in Sources */,
-				F803203700DB835D6F74A857 /* GcovTestObserver.m in Sources */,
 				F8032E4CB019BAC7BF47E8AB /* CFGCoreFactoryGentleman.m in Sources */,
 				F803223BD14DA3A2B9E5239B /* CFGDefinitionBuilder.m in Sources */,
 				F80327857AD25F6F71888888 /* CFGDefinitionBuilderSpec.m in Sources */,

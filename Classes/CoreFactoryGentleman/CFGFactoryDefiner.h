@@ -1,4 +1,5 @@
-#import <FactoryGentleman/FGFactoryDefiner.h>
+#import <Foundation/Foundation.h>
+#import <FactoryGentleman/FactoryGentleman.h>
 
 #import "CFGDefinitionBuilder.h"
 

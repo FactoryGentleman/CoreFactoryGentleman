@@ -1,6 +1,9 @@
-#import "CFGFactoryDefinition.h"
-
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <FactoryGentleman/FactoryGentleman.h>
 #import <FactoryGentleman/FGObjectBuilder.h>
+
+#import "CFGFactoryDefinition.h"
 
 @interface CFGObjectBuilder : FGObjectBuilder
 - (instancetype)initWithContext:(NSManagedObjectContext *)context

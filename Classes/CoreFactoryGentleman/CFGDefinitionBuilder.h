@@ -1,4 +1,6 @@
-#import <FactoryGentleman/FGDefinitionBuilder.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <FactoryGentleman/FactoryGentleman.h>
 
 @interface CFGDefinitionBuilder : FGDefinitionBuilder
 - (instancetype)field:(NSString *)fieldName byContext:(id (^)(NSManagedObjectContext *))fieldValueBlock;

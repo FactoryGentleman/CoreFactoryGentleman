@@ -1,4 +1,5 @@
-#import <FactoryGentleman/FGFactoryDefinition.h>
+#import <Foundation/Foundation.h>
+#import <FactoryGentleman/FactoryGentleman.h>
 
 @interface CFGFactoryDefinition : FGFactoryDefinition
 @property (nonatomic, readonly) NSDictionary *coreFieldDefinitions;

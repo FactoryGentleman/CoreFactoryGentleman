@@ -1,3 +1,4 @@
+#import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import <FactoryGentleman/FactoryGentleman.h>
 

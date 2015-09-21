@@ -4,8 +4,22 @@
 #import <FactoryGentleman/FGFactoryDefinitionRegistry.h>
 
 #import "CFGObjectBuilder.h"
+#import "CFGFactoryDefiner.h"
 
 @implementation CFGCoreFactoryGentleman
+
+#pragma mark - Init
+
++ (void)initialize
+{
+    [super initialize];
+
+    // ensure all the factories are initialized before creating objects
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [CFGFactoryDefiner loadFactoryDefiners];
+    });
+}
 
 #pragma mark - Public
 

@@ -2,7 +2,7 @@ def needed_pods
   pod 'Specta'
   pod 'Expecta'
   pod 'OCMockito'
-  pod 'FactoryGentleman', '~> 1.2.2'
+  pod 'FactoryGentleman', :git => 'git://github.com/soundcloud/FactoryGentleman.git', :commit => 'da8fb69'
 end
 
 target 'CoreFactoryGentlemanSpec-iOS' do
